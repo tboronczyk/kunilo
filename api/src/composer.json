@@ -1,0 +1,21 @@
+{
+    "require": {
+        "php": "^7.4",
+        "ext-openssl": "*",
+        "ext-pdo_mysql": "*",
+        "slim/slim": "^4.5.0",
+        "slim/psr7": "^1.0",
+        "slim/http": "^1.0.0",
+        "slim/twig-view": "^3.1",
+        "php-di/php-di": "^6.1",
+        "vlucas/phpdotenv": "^4.0",
+        "boronczyk/alistair": "^0.7.0",
+        "firebase/php-jwt": "^5.0",
+        "swiftmailer/swiftmailer": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kunilo\\": "include/Kunilo/"
+        }
+    }
+}
