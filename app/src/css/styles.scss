@@ -1,0 +1,64 @@
+@use '../../node_modules/onsenui/css/onsenui.css';
+@use '../../node_modules/onsenui/css/onsen-css-components.css';
+
+a {
+  color: #3d7bf6;
+  text-decoration: none;
+}
+
+.small {
+  font-size: 90%;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.label {
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.field {
+  margin-bottom: 20px;
+
+  .inline {
+    text-align: left;
+  }
+}
+
+.error {
+  color: #ac1011;
+}
+
+.success {
+  color: #25a287;
+}
+
+.help {
+  color: #afafaf;
+  font-size: 85%;
+  line-height: 1.5;
+
+  &.error {
+    @extend .error;
+  }
+
+  &.success {
+    @extend .success;
+  }
+}
+
+.fade-enter-active {
+  transition: opacity .2s ease-out;
+}
+
+.fade-leave-active {
+  transition: opacity .2s ease-in;
+}
+
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
+}
